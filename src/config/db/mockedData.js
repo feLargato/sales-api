@@ -2,7 +2,6 @@ import Sales from "../../modules/sales/model/Sales.js"
 
 export async function createMockedData() {
 
-    await Sales.collection.drop();
     await Sales.create({
         products: [
           {
